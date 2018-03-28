@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="co.bytemark.componenttests.ResetPinTests">
+        <methods>
+          <include name="tearDownAfterSuite"/>
+          <include name="preCondtions"/>
+          <include name="preconditionBeforeSuite"/>
+          <include name="reset" invocation-numbers="0"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterTest"/>
+        </methods>
+      </class> <!-- co.bytemark.componenttests.ResetPinTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

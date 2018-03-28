@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="LegacyApp">
+		<classes>
+			<class name="co.bytemark.test.orders.OrdersRegressionCases">
+				<methods>
+					<include name="orderItemWithSavedCard" />
+					<include name="orderItemWithAdhocCard" />
+					<include name="orderWithCloudPass" />
+					<exclude name="addEmployeeTestCase" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="2.0AppCases">
+		<classes>
+			<class name="co.bytemark.test.orders.OrdersRegressionCases">
+				<methods>
+					<include name="orderItemWithSavedCard" />
+					<include name="orderItemWithAdhocCard" />
+					<exclude name="orderWithCloudPass" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+
+	<test name="4.0Appcases">
+		<classes>
+			<class name="co.bytemark.test.orders.OrdersRegressionCases">
+				<methods>
+					<include name="orderItemWithSavedCard" />
+					<include name="orderItemWithAdhocCard" />
+					<include name="orderWithAutoActivationPass" />
+					<exclude name="orderWithCloudPass" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

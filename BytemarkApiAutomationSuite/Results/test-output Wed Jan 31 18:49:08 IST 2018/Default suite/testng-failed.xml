@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="co.bytemark.test.orders.OrdersRegressionCases">
+        <methods>
+          <include name="orderItemWithAdhocCard"/>
+          <include name="tearDownAfterSuite"/>
+          <include name="preconditionBeforeSuite"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="tearDownAfterTest"/>
+        </methods>
+      </class> <!-- co.bytemark.test.orders.OrdersRegressionCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

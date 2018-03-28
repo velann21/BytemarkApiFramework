@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="9" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="81179" started-at="2018-01-30T15:41:15Z" finished-at="2018-01-30T15:42:37Z">
+    <groups>
+    </groups>
+    <test name="LegacyApp" duration-ms="22772" started-at="2018-01-30T15:41:15Z" finished-at="2018-01-30T15:41:38Z">
+      <class name="co.bytemark.test.orders.OrdersRegressionCases">
+        <test-method status="PASS" signature="preconditionsBeforeTest()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="preconditionsBeforeTest" is-config="true" duration-ms="5072" started-at="2018-01-30T21:11:15Z" finished-at="2018-01-30T21:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditionsBeforeTest -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="preCondtions" is-config="true" duration-ms="304" started-at="2018-01-30T21:11:21Z" finished-at="2018-01-30T21:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=FAILURE method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="FAIL" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="orderItemWithSavedCard" duration-ms="3244" started-at="2018-01-30T21:11:21Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:11:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FailedOrderWithSavedCardLegacyApp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[MakeOrder_Api]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try ag] but found [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try ag] but found [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try again.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at co.bytemark.helper.Then.assertEquals(Then.java:48)
+	at co.bytemark.test.orders.OrdersRegressionCases.orderItemWithSavedCard(OrdersRegressionCases.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="tearDownAfterMetod" is-config="true" duration-ms="2" started-at="2018-01-30T21:11:24Z" finished-at="2018-01-30T21:11:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=FAILURE method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="orderItemWithSavedCard" duration-ms="8119" started-at="2018-01-30T21:11:24Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:11:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MultipleOrderItemWithSavedCardLegacyApp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[MakeOrder_Api]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:11:24Z" finished-at="2018-01-30T21:11:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="tearDownAfterMetod" is-config="true" duration-ms="1" started-at="2018-01-30T21:11:33Z" finished-at="2018-01-30T21:11:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="orderItemWithSavedCard" duration-ms="5234" started-at="2018-01-30T21:11:33Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OneOrderItemWithSavedCardLegacyApp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[MakeOrder_Api]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:11:33Z" finished-at="2018-01-30T21:11:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="tearDownAfterMetod" is-config="true" duration-ms="1" started-at="2018-01-30T21:11:38Z" finished-at="2018-01-30T21:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="tearDownAfterTest()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@5622fdf]" name="tearDownAfterTest" is-config="true" duration-ms="267" started-at="2018-01-30T21:11:38Z" finished-at="2018-01-30T21:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTest -->
+      </class> <!-- co.bytemark.test.orders.OrdersRegressionCases -->
+    </test> <!-- LegacyApp -->
+    <test name="2.0AppCases" duration-ms="27252" started-at="2018-01-30T15:41:43Z" finished-at="2018-01-30T15:42:10Z">
+      <class name="co.bytemark.test.orders.OrdersRegressionCases">
+        <test-method status="PASS" signature="preconditionsBeforeTest()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="preconditionsBeforeTest" is-config="true" duration-ms="0" started-at="2018-01-30T21:11:43Z" finished-at="2018-01-30T21:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditionsBeforeTest -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:11:43Z" finished-at="2018-01-30T21:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=FAILURE method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="FAIL" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="orderItemWithSavedCard" duration-ms="1565" started-at="2018-01-30T21:11:43Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FailedOrderWithSavedCard2.0App]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0app Order Test Data]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try ag] but found [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try ag] but found [This credit card is invalid or was not found.  Please supply valid user_uuid along with credit_card_uuid and private_key, or credit_card identifiers and try again.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at co.bytemark.helper.Then.assertEquals(Then.java:48)
+	at co.bytemark.test.orders.OrdersRegressionCases.orderItemWithSavedCard(OrdersRegressionCases.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="tearDownAfterMetod" is-config="true" duration-ms="1" started-at="2018-01-30T21:11:45Z" finished-at="2018-01-30T21:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=FAILURE method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="orderItemWithSavedCard" duration-ms="14205" started-at="2018-01-30T21:11:45Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:11:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MultipleOrderItemWithSavedCard2.0App]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0app Order Test Data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:11:45Z" finished-at="2018-01-30T21:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="tearDownAfterMetod" is-config="true" duration-ms="1" started-at="2018-01-30T21:11:59Z" finished-at="2018-01-30T21:11:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="orderItemWithSavedCard" duration-ms="11436" started-at="2018-01-30T21:11:59Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:12:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OneOrderItemWithSavedCard2.0App]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0app Order Test Data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:11:59Z" finished-at="2018-01-30T21:11:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="tearDownAfterMetod" is-config="true" duration-ms="1" started-at="2018-01-30T21:12:10Z" finished-at="2018-01-30T21:12:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="tearDownAfterTest()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@7085bdee]" name="tearDownAfterTest" is-config="true" duration-ms="39" started-at="2018-01-30T21:12:10Z" finished-at="2018-01-30T21:12:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTest -->
+      </class> <!-- co.bytemark.test.orders.OrdersRegressionCases -->
+    </test> <!-- 2.0AppCases -->
+    <test name="4.0Appcases" duration-ms="21140" started-at="2018-01-30T15:42:15Z" finished-at="2018-01-30T15:42:37Z">
+      <class name="co.bytemark.test.orders.OrdersRegressionCases">
+        <test-method status="PASS" signature="preconditionBeforeSuite()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="preconditionBeforeSuite" is-config="true" duration-ms="287" started-at="2018-01-30T21:11:15Z" finished-at="2018-01-30T21:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditionBeforeSuite -->
+        <test-method status="PASS" signature="preconditionsBeforeTest()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="preconditionsBeforeTest" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:15Z" finished-at="2018-01-30T21:12:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditionsBeforeTest -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:15Z" finished-at="2018-01-30T21:12:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="orderItemWithSavedCard" duration-ms="1623" started-at="2018-01-30T21:12:15Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FailedOrderWithSavedCard4.0Apps]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0app Order Test Data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="tearDownAfterMetod" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:17Z" finished-at="2018-01-30T21:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="orderItemWithSavedCard" duration-ms="17258" started-at="2018-01-30T21:12:17Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:12:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MultipleOrderItemWithSavedCard4.0Apps]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0app Order Test Data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:17Z" finished-at="2018-01-30T21:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="tearDownAfterMetod" is-config="true" duration-ms="1" started-at="2018-01-30T21:12:34Z" finished-at="2018-01-30T21:12:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="orderItemWithSavedCard" duration-ms="2217" started-at="2018-01-30T21:12:34Z" data-provider="fromExcelDPSavedCard" finished-at="2018-01-30T21:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OneOrderItemWithSavedCard4.0Apps]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0app Order Test Data]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItemWithSavedCard -->
+        <test-method status="PASS" signature="preCondtions(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="preCondtions" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:34Z" finished-at="2018-01-30T21:12:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondtions -->
+        <test-method status="PASS" signature="tearDownAfterTest()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="tearDownAfterTest" is-config="true" duration-ms="36" started-at="2018-01-30T21:12:36Z" finished-at="2018-01-30T21:12:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterTest -->
+        <test-method status="PASS" signature="tearDownAfterMetod(org.testng.ITestResult)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="tearDownAfterMetod" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:36Z" finished-at="2018-01-30T21:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderItemWithSavedCard status=SUCCESS method=OrdersRegressionCases.orderItemWithSavedCard(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMetod -->
+        <test-method status="PASS" signature="tearDownAfterSuite()[pri:0, instance:co.bytemark.test.orders.OrdersRegressionCases@31a5c39e]" name="tearDownAfterSuite" is-config="true" duration-ms="0" started-at="2018-01-30T21:12:42Z" finished-at="2018-01-30T21:12:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterSuite -->
+      </class> <!-- co.bytemark.test.orders.OrdersRegressionCases -->
+    </test> <!-- 4.0Appcases -->
+  </suite> <!-- Suite -->
+</testng-results>

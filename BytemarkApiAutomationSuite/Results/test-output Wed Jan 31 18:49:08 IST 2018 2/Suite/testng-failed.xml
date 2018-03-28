@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="LegacyApp(failed)">
+    <classes>
+      <class name="co.bytemark.test.orders.OrdersRegressionCases">
+        <methods>
+          <include name="tearDownAfterSuite"/>
+          <include name="preCondtions"/>
+          <include name="preCondtions"/>
+          <include name="preCondtions"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="orderItemWithSavedCard" invocation-numbers="0"/>
+          <include name="preconditionBeforeSuite"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterTest"/>
+          <include name="tearDownAfterTest"/>
+          <include name="tearDownAfterTest"/>
+        </methods>
+      </class> <!-- co.bytemark.test.orders.OrdersRegressionCases -->
+    </classes>
+  </test> <!-- LegacyApp(failed) -->
+  <test name="2.0AppCases(failed)">
+    <classes>
+      <class name="co.bytemark.test.orders.OrdersRegressionCases">
+        <methods>
+          <include name="tearDownAfterSuite"/>
+          <include name="preCondtions"/>
+          <include name="preCondtions"/>
+          <include name="preCondtions"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="preconditionsBeforeTest"/>
+          <include name="orderItemWithSavedCard" invocation-numbers="0"/>
+          <include name="preconditionBeforeSuite"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterMetod"/>
+          <include name="tearDownAfterTest"/>
+          <include name="tearDownAfterTest"/>
+          <include name="tearDownAfterTest"/>
+        </methods>
+      </class> <!-- co.bytemark.test.orders.OrdersRegressionCases -->
+    </classes>
+  </test> <!-- 2.0AppCases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
